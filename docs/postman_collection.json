@@ -1,0 +1,256 @@
+{
+  "info": {
+    "_postman_id": "weather-api-collection",
+    "name": "Weather API Collection",
+    "description": "Coleção de testes para a Weather API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Health Check",
+      "item": [
+        {
+          "name": "Verificar Saúde da API",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:3000/api/v1/health",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "v1",
+                "health"
+              ]
+            },
+            "description": "Verifica se a API e os serviços externos estão funcionando corretamente"
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Clima",
+      "item": [
+        {
+          "name": "Obter Clima - São Paulo",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:3000/api/v1/clima/São Paulo",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "v1",
+                "clima",
+                "São Paulo"
+              ]
+            },
+            "description": "Retorna informações de clima de São Paulo"
+          },
+          "response": []
+        },
+        {
+          "name": "Obter Clima - Rio de Janeiro",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:3000/api/v1/clima/Rio de Janeiro",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "v1",
+                "clima",
+                "Rio de Janeiro"
+              ]
+            },
+            "description": "Retorna informações de clima do Rio de Janeiro"
+          },
+          "response": []
+        },
+        {
+          "name": "Obter Clima - Belo Horizonte",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:3000/api/v1/clima/Belo Horizonte",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "v1",
+                "clima",
+                "Belo Horizonte"
+              ]
+            },
+            "description": "Retorna informações de clima de Belo Horizonte"
+          },
+          "response": []
+        },
+        {
+          "name": "Obter Clima - Cidade Inexistente",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:3000/api/v1/clima/CidadeInexistenteXYZ123",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "v1",
+                "clima",
+                "CidadeInexistenteXYZ123"
+              ]
+            },
+            "description": "Teste de erro: cidade não encontrada (esperado 404)"
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Cidades por Estado",
+      "item": [
+        {
+          "name": "Listar Cidades - São Paulo",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:3000/api/v1/cidades/SP",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "v1",
+                "cidades",
+                "SP"
+              ]
+            },
+            "description": "Lista todas as cidades do estado de São Paulo"
+          },
+          "response": []
+        },
+        {
+          "name": "Listar Cidades - Rio de Janeiro",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:3000/api/v1/cidades/RJ",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "v1",
+                "cidades",
+                "RJ"
+              ]
+            },
+            "description": "Lista todas as cidades do estado do Rio de Janeiro"
+          },
+          "response": []
+        },
+        {
+          "name": "Listar Cidades - Minas Gerais",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:3000/api/v1/cidades/MG",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "v1",
+                "cidades",
+                "MG"
+              ]
+            },
+            "description": "Lista todas as cidades do estado de Minas Gerais"
+          },
+          "response": []
+        },
+        {
+          "name": "Listar Cidades - Sigla Inválida",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:3000/api/v1/cidades/INVALID",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "v1",
+                "cidades",
+                "INVALID"
+              ]
+            },
+            "description": "Teste de erro: sigla inválida (esperado 400)"
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Root",
+      "item": [
+        {
+          "name": "Informações da API",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:3000/",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                ""
+              ]
+            },
+            "description": "Retorna informações gerais sobre a API"
+          },
+          "response": []
+        }
+      ]
+    }
+  ]
+}
