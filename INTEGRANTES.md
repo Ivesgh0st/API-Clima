@@ -15,7 +15,7 @@
 
 | José teofilo Silva Junior |2326318 | 
 
-| Eric Vinicius Dias Aquino| 2326242 |  
+| Eric Vinicius Dias Aquino| 2326242 | https://github.com/Eric-Dev01 | 
 
 | Gabriel Eduardo Brasil  | 2124682 | 
 
